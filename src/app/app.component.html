@@ -1,0 +1,9 @@
+<h1>Hello World</h1>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <ngx-mat-timepicker-field [format]="24"
+                              formControlName="time"
+                              [min]="minDate">
+    </ngx-mat-timepicker-field>
+    <button mat-button>Click me</button>
+</form>
